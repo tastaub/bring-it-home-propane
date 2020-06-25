@@ -1,2 +1,12 @@
-body {
+.navbar {
+  height: 30px;
+  padding: 10px;
+  background-color: rgb(71, 125, 240);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  color: #eee;
+  font-size: 30px;
 }
