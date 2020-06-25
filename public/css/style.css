@@ -10,3 +10,23 @@
   color: #eee;
   font-size: 30px;
 }
+
+.cards-container {
+  height: 90vh;
+  margin: 20px 60px;
+  border: solid blue 1px;
+  padding: 10px;
+}
+
+.card-main {
+  height: 300px;
+  border: solid red 3px;
+}
+
+.card-secondary {
+  display: inline-block;
+  height: 200px;
+  margin: 20px 0;
+  border: solid green 3px;
+  width: 45%;
+}
