@@ -1,7 +1,10 @@
+body {
+  background-color: #eee;
+}
+
 .navbar {
-  height: 30px;
-  padding: 10px;
-  background-color: rgb(71, 125, 240);
+  height: 50px;
+  background-color: #477df0;
   display: flex;
   justify-content: space-between;
 }
@@ -9,24 +12,85 @@
 .navbar-item {
   color: #eee;
   font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-item.navbar-icon {
+    padding-top: 13px;
+    font-size: 24px;
+  }
+}
+
+.navbar-item.navbar-button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+  background-color: #eee;
+  color: #477df0;
+  border-radius: 9px;
+}
+
+.navbar-item.navbar-button span {
+  font-family: "Roboto", sans-serif;
 }
 
 .cards-container {
   height: 90vh;
   margin: 20px 60px;
-  border: solid blue 1px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 9px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 9px;
+}
+
+.card .card-header {
+  border-radius: 9px 9px 0 0;
+  height: 30%;
+  padding-top: 20px;
+}
+
+.card .card-header .card-header-icon {
+  display: block;
+  background-color: #eee;
   padding: 10px;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+
+.card .card-header .card-header-icon svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.card .card-header .card-header-title {
+  color: #eee;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  padding-top: 20px;
 }
 
 .card-main {
-  height: 300px;
-  border: solid red 3px;
+  height: 70vh;
+}
+
+.card.card-main .card-header {
+  background-color: #477df0;
 }
 
 .card-secondary {
   display: inline-block;
   height: 200px;
   margin: 20px 0;
-  border: solid green 3px;
   width: 45%;
 }
